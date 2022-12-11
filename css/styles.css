@@ -150,8 +150,6 @@ ul {
     align-items: center;
     width: 492px;
     width: 603px;
-    
-
 }
 
 .hero-title {
@@ -168,16 +166,18 @@ ul {
 /* Кнопка */
 .button {
     padding: 16px 32px;
-    border-radius: 4px;   
-
+    border-color: transparent;
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 
+    
+    border-radius: 4px;
+
     color: var(--white-color);
-    background: var(--primary-brand-color);
+    background-color: var(--primary-brand-color);
 }
 
 .button:hover,
@@ -287,6 +287,7 @@ color: var(--dark-color);
 .team-title {
     display: flex;
     margin-top: 72px;
+    flex-wrap: wrap;
 }
 
 .team-title > li {
@@ -300,7 +301,7 @@ color: var(--dark-color);
 .team-list {
     
     flex-basis: calc((100% - 96px) / 4);
-    column-gap: 24px;
+    gap: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
@@ -367,9 +368,7 @@ color: var(--body-text-color);
 }
 
 .portfolio-card {
-    
-    padding-top: 32px;
-    padding-left: 16px;
+    padding: 32px 16px 32px 16px;
 
     border-right: 0.5px solid var(--white-color);
     border-bottom: 0.5px solid var(--white-color);
@@ -378,7 +377,6 @@ color: var(--body-text-color);
 }
 
 .portfolio-title {
-    margin-top: 32px;
     justify-content: center;
     align-items: flex-start;
     font-weight: 600;
@@ -390,8 +388,7 @@ color: var(--body-text-color);
 
 .portfolio-text {
     margin-top: 8px;
-    margin-bottom: 32px;
-
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -442,10 +439,11 @@ color: var(--body-text-color);
 
 .footer {
     background: var(--dark-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /* Лого футер */
 .logo-footer {
-    padding-top: 100px;
     margin-bottom: 16px;
 
     font-family: 'Raleway', sans-serif;
@@ -459,7 +457,6 @@ color: var(--body-text-color);
 
 .footer-text {
     max-width: 264px;
-    padding-bottom: 100px;
 
     font-weight: 400;
     font-size: 16px;
